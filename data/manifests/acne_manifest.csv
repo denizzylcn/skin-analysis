@@ -1,0 +1,91 @@
+path,ok,reason,blur_score,brightness,width,height,file_size_kb,md5,label,split
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\0\front.jpg,False,bulanık (blur=8.0),8.01,98.78,2616,4640,3616.7,b612f090d58a6ed9e347fac1eb05ed71,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\0\left_side.jpg,False,bulanık (blur=7.9),7.87,97.45,2565,3546,2694.7,eee196882e6122ca129ecf95165b4bfb,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\0\right_side.jpg,False,bulanık (blur=8.0),7.97,105.85,2353,3475,2396.6,d423a5c0ed73d6053d49b9ce200944c3,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\1\front.jpg,True,,117.13,83.88,3072,4080,3864.5,fbcf3cc8b478a8af1bffc7509dfd8bca,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\1\left_side.jpg,True,,132.15,94.62,3072,4080,4049.6,ad33d342255d550c13d09c82d5fcce0e,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\1\right_side.jpg,True,,156.83,110.41,3072,4080,4096.6,32fdf0f39387c776d4c888d92e21ac3f,acne,val
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\2\front.jpg,False,bulanık (blur=9.0),8.98,67.3,2208,2944,1905.2,e94451784b3f47fc790a329dcc900ab5,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\2\left_side.jpg,False,bulanık (blur=10.5),10.47,66.64,2208,2944,1990.0,0a5983c53eab05f19c6ba628c123d6d8,acne,test
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\2\right_side.jpg,False,bulanık (blur=9.4),9.36,58.68,2208,2944,1884.7,83bdc2e0c3c2779290e05890416cbc02,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\3\front.jpg,True,,552.66,153.93,640,853,166.0,4651c370a9837f2b9eb29fa750d566f3,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\3\left_side.jpg,True,,543.36,154.3,640,853,161.1,4570140933c8ea0e97fc8c5fdc4a24b8,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\3\right_side.jpg,True,,575.7,149.99,640,853,171.8,6abecc3244857a3244cd4bba2c82efde,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\4\front.jpg,True,,128.72,127.98,3088,2316,1527.9,10600bdc439ca0e3148461a748ce0027,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\4\left_side.jpg,True,,122.92,119.15,3088,2316,1558.6,dfee5e23db6967b4b595f1ab7b211a80,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\4\right_side.jpg,True,,125.91,112.09,3088,2316,1598.6,c4e31bdce377094f78debbf1abc8e701,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\5\front.jpg,True,,124.56,106.11,3000,4000,4881.1,4e7898a83a8c0e96da70a7e64dc8cb4c,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\5\left_side.jpg,True,,436.25,120.7,3000,4000,6417.9,3af7f431482eabd2123874fe96d8a269,acne,test
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\5\right_side.jpg,True,,419.23,105.27,3000,4000,6337.6,ca818c5935ba75d5e7b8feab8838d1d9,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\6\front.jpg,True,,28.79,80.89,3120,4160,4008.8,b871889b1bc6318a893e27ad97d41af3,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\6\left_side.jpg,True,,60.78,88.79,3120,4160,4582.2,3dac35c5d4981438a533f650ef36b551,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\6\right_side.jpg,True,,44.9,102.01,3120,4160,4708.8,a31687ea0ca153f99c861097b8edd389,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\7\front.jpg,True,,20.16,138.73,1200,1600,563.1,0d7e42752ff90087d4aaefd914b27ac8,acne,val
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\7\left_side.jpg,True,,16.97,120.67,1200,1600,490.0,cb26539d60a785efb31d8539d3edacd2,acne,val
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\7\right_side.jpg,True,,17.33,130.6,1200,1600,493.7,1b1b0b5379f7d337134978dc83de58b7,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\8\front.jpg,True,,145.65,130.79,2448,3264,2107.3,1734cc481c1bb3dc7dc534662e687bae,acne,val
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\8\left_side.jpg,True,,161.23,119.6,2448,3264,2245.1,bafbf0e72c40f7b54911712162b0ae02,acne,test
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\8\right_side.jpg,True,,196.85,118.9,2448,3264,2330.6,fe6ee89251dcc98e6cbf86116427d4b3,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\9\front.jpg,True,,94.56,164.63,2448,3264,3268.0,108d673f0ebe827087e1a3c8741e1a2c,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\9\left_side.jpg,True,,116.96,154.39,2448,3264,3399.4,468b54f87ea7fb55955c747d00e55368,acne,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\acne\9\right_side.jpg,True,,94.51,160.72,2448,3264,3351.7,c4350bbffe2f260e98f430843979589a,acne,test
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\10\front.jpeg,True,,341.99,103.32,900,1600,218.7,f36e3b73316b8961d0301b28fef1cda9,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\10\left_side.jpeg,True,,319.13,103.29,900,1600,218.1,512e28351deef00183a51e612763b753,bags,test
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\10\right_side.jpeg,True,,271.94,105.57,900,1600,211.8,1d1ca86e8b8bd4abeeaffb891610f979,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\11\front.jpg,True,,22.03,81.2,2576,1932,776.4,ae4523763a249ba302369e855e6c9e86,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\11\left_side.jpg,True,,32.53,71.54,2576,1932,858.8,8bf2d9ec05f58b0c172ed3ffd3efa208,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\11\right_side.jpg,True,,27.75,94.27,2576,1932,830.2,4cf3006d83feecd49122905eeb97faac,bags,test
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\12\front.jpg,False,bulanık (blur=9.7),9.67,169.37,3456,4608,4206.8,ead50acf36abd8a605b82d1e64ae5719,bags,val
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\12\left_side.jpg,False,bulanık (blur=12.7),12.74,161.11,3456,4608,4434.2,d395adfb73143721737d179aa125f84a,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\12\right_side.jpg,False,bulanık (blur=10.9),10.95,163.63,3456,4608,4403.7,5131585d649ec5f26c69f48071d0b01e,bags,test
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\13\front.jpg,False,bulanık (blur=13.7),13.68,55.64,3880,5184,7581.3,f6f553beb5c700b9172100f853e2ad0d,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\13\left_side.jpg,False,bulanık (blur=12.7),12.72,53.22,3880,5184,7401.9,ee9f77ebf16b4899bcf07a450c375931,bags,val
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\13\right_side.jpg,False,bulanık (blur=13.6),13.64,54.25,3880,5184,7565.3,9780a503d7de6cbda95922c8331f056e,bags,test
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\14\front.jpg,True,,40.16,66.15,1836,3264,2000.7,c0321b2c5f262aee548aad1b7026ae96,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\14\left_side.jpg,True,,45.89,66.71,1836,3264,2049.0,583d91a4455b57e22a46109644881b08,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\14\right_side.jpg,True,,40.45,63.32,1836,3264,2001.2,6c44e81a77ccc507becc83dd55caa9ec,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\15\front.jpg,True,,26.85,103.71,2640,1980,1115.9,45ed703ba3d43a61b91c85f37d80bfaa,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\15\left_side.jpg,True,,36.99,92.6,2640,1980,1180.0,d96e914f9a11985a30685c01cfa3fef4,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\15\right_side.jpg,True,,39.38,81.54,2640,1980,1212.4,f9609b106d4fa5b78fd584d3c074dcfe,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\16\front.jpg,True,,90.16,90.33,1920,2560,2230.6,a645ba85547287f5a1b2e016b606dccd,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\16\left_side.jpg,True,,175.98,84.83,1920,2560,2447.1,5bffddc2a32541c87cde2e75870fc55d,bags,val
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\16\right_side.jpg,True,,127.82,85.1,1920,2560,2364.7,fb50b1777dbd4deb914d0381a8b36761,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\17\front.jpg,True,,71.7,103.18,2448,3264,2905.6,e34909d76cf4f0efe20091044f1062f2,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\17\left_side.jpg,True,,90.65,95.45,2448,3264,2949.4,76db6f8b9762c61ed80663792577c680,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\17\right_side.jpg,True,,55.2,99.3,2448,3264,2958.4,ffa03d62a34727abbcd352c58c043c54,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\18\front.jpg,False,bulanık (blur=11.8),11.85,127.57,3456,4608,5227.0,746e779dc7d263669938287b81680428,bags,val
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\18\left_side.jpg,False,bulanık (blur=9.8),9.82,114.64,3456,4608,5032.6,2ba4b724b8f417ee216a9171c78d226e,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\18\right_side.jpg,False,bulanık (blur=11.1),11.09,115.77,3456,4608,5115.5,5f2fb737686d4add9b3ae0c5d525572e,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\19\front.jpg,True,,17.34,90.26,2448,3264,2804.9,f49cf1c3be64c24eb88fb62fbb82fe06,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\19\left_side.jpg,True,,18.36,96.47,2448,3264,2850.0,fc5958551b94955b008f839c3f113974,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\bags\19\right_side.jpg,True,,17.86,94.67,2448,3264,2829.3,9f81de851deee8985ae95d724f64853a,bags,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\20\front.jpg,True,,23.42,144.82,2576,1932,784.6,287eeb3bb76a5a42418ffac3be72592e,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\20\left_side.jpg,True,,29.49,132.36,2576,1932,829.3,7afdc888d9ffc80a8fd7df9872ece37f,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\20\right_side.jpg,True,,30.95,128.2,2576,1932,836.3,580697881d5867308b29b61f2f91e907,redness,test
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\21\front.jpg,False,bulanık (blur=4.6),4.6,138.21,4224,5632,5614.4,ff554441ca863ab622418b2b281027dd,redness,val
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\21\left_side.jpg,False,bulanık (blur=4.6),4.57,132.82,4224,5632,5652.1,00f427b1570de568530abf3ba022a374,redness,test
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\21\right_side.jpg,False,bulanık (blur=11.0),11.04,136.38,4224,5632,7101.8,e068b1e41880b34ed358b6b67dca8a9b,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\22\front.jpg,True,,110.01,115.84,2448,3264,3732.7,e409e34d45bba257af5ff58a78a4cc38,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\22\left_side.jpg,True,,155.18,103.08,2448,3264,3896.6,84d1381020c37fa3682a43c9a29332ab,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\22\right_side.jpg,True,,155.99,120.28,2448,3264,3888.8,0a55f71543d3576c971bdfcba585604d,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\23\front.jpg,False,bulanık (blur=11.8),11.76,145.07,4224,5632,7075.5,39ead4a4696c35a32977587857c16054,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\23\left_side.jpg,False,bulanık (blur=14.0),13.96,152.15,4224,5632,7144.7,5376202be8065a17582fc56cb4854fef,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\23\right_side.jpg,False,bulanık (blur=11.8),11.83,154.15,4224,5632,6956.6,60b32772d111cb859ec1d57c48cb2eac,redness,val
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\24\front.jpg,True,,377.94,103.3,1080,1300,659.5,fd508f6fba4af39e51d36e33128bd51f,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\24\left_side.jpg,True,,446.69,107.61,1080,1294,583.9,15ff57f8b4fd8af6c4678712e32e6be8,redness,test
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\24\right_side.jpg,True,,400.97,106.53,1080,1284,564.8,3d16a67090c57732501f17d482656999,redness,test
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\25\front.jpg,False,bulanık (blur=9.2),9.2,155.58,2916,5184,4472.9,401952c8e153b01963eaa3935a96163a,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\25\left_side.jpg,False,bulanık (blur=9.3),9.32,147.13,2916,5184,4572.2,e492d31cafaa53d9cd878f453bed11c5,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\25\right_side.jpg,False,bulanık (blur=8.5),8.52,140.18,2916,5184,4458.7,7253178834c301e13533c838f42f76f6,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\26\front.jpg,True,,72.02,127.96,1775,2158,838.5,a04841b4b3991c636c73074288946a17,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\26\left_side.jpg,True,,126.53,127.81,1988,2651,1189.7,3be2144959c6c6f77b417ec619d85d75,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\26\right_side.jpg,True,,97.08,123.39,1909,2580,1092.5,afada1c78d6a49f60abb541fffa8f6b3,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\27\front.jpg,True,,303.24,135.29,2448,3264,3283.7,4b90fb9f1dde67ea96809202f1bf7d7f,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\27\left_side.jpg,True,,147.54,134.09,2448,3264,3027.9,11568c426f0fb7abfa223bf8f214555f,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\27\right_side.jpg,True,,358.07,134.95,2448,3264,3370.4,87af12f789ac4016017c126b54a9fb9d,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\28\front.jpg,False,bulanık (blur=10.5),10.48,155.48,2448,3264,2117.9,8b953d4ff0b4af44482d217431cb76ce,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\28\left_side.jpg,False,bulanık (blur=12.6),12.57,145.91,2448,3264,2171.4,6ac27f6a93fde6bea08c2653299ce15b,redness,val
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\28\right_side.jpg,False,bulanık (blur=11.2),11.21,143.81,2448,3264,2154.8,c82b7c1d24dee5bbc634ccbc7bef06df,redness,val
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\29\front.jpg,True,,36.43,114.49,1656,2944,1651.3,0129a275e9e94f445adb00e3c691b2c6,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\29\left_side.jpg,True,,29.1,109.95,1656,2944,1672.5,79773232e51063f5276d21fbc4a5abb7,redness,train
+C:\Users\DENİZ\Desktop\BİTİRME\skin-analysis\data\raw\acne\JPEGImages\redness\29\right_side.jpg,True,,30.23,112.56,1656,2944,1671.9,1c6d93d26ded9feda3aceaddd5b446c9,redness,train

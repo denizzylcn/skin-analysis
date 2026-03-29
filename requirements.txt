@@ -1,0 +1,24 @@
+# Görüntü işleme
+opencv-python==4.9.0.80
+Pillow==10.3.0
+
+# Veri & analiz
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# Derin öğrenme (CPU - yerel)
+torch==2.3.0
+torchvision==0.18.0
+
+# API
+fastapi==0.111.0
+uvicorn==0.29.0
+python-multipart==0.0.9
+
+# Yardımcılar
+tqdm==4.66.4
+pyyaml==6.0.1
+python-dotenv==1.0.1

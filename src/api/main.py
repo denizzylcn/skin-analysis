@@ -1,6 +1,7 @@
 """FastAPI uygulaması — ana giriş noktası."""
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from src.api.routes import router
 
 app = FastAPI(
     title="Cilt Analizi API",

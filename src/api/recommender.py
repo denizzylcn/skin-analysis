@@ -14,41 +14,42 @@ class Recommender:
         self.df = pd.read_csv(_CSV)
 
     def recommend(self, skin_type: str, problems: list[str], top_n: int = 5) -> list[dict]:
-        """
-        skin_type : "oily" | "dry" | "normal"
-        problems  : ["acne", "wrinkle", "dark spot", ...]
-        """
-        col_map = {"oily": "Oily", "dry": "Dry", "normal": "Normal",
-                   "combination": "Combination", "sensitive": "Sensitive"}
-
+        col_map = {
+            "oily"       : "Oily",
+            "dry"        : "Dry",
+            "normal"     : "Normal",
+            "combination": "Combination",
+            "sensitive"  : "Sensitive",
+        }
         col = col_map.get(skin_type.lower(), "Normal")
-        df = self.df[self.df[col] == 1].copy()
+        df  = self.df[self.df[col] == 1].copy()
 
-        # Probleme göre kategori önceliği
+        problem_category_map = {
+            "acne"       : ["Treatment", "Cleanser"],
+            "blackhead"  : ["Cleanser", "Treatment"],
+            "redness"    : ["Treatment", "Face Mask"],
+            "wrinkle"    : ["Anti-Aging", "Night Cream", "Moisturizer"],
+            "dark spot"  : ["Treatment", "Serum"],
+            "cilt lekesi": ["Treatment", "Serum"],
+            "gözenek"    : ["Cleanser", "Toner"],
+            "bags"       : ["Eye Care", "Eye cream"],
+        }
+
         priority = []
-        if any(p in problems for p in ["acne", "redness", "blackhead"]):
-            priority.append("Treatment")
-            priority.append("Cleanser")
-        if any(p in problems for p in ["wrinkle", "dark spot", "cilt lekesi"]):
-            priority.append("Treatment")
-            priority.append("Moisturizer")
-        if "gözenek" in problems:
-            priority.append("Cleanser")
-        if "bags" in problems:
-            priority.append("Eye cream")
+        for problem in problems:
+            for cat in problem_category_map.get(problem, []):
+                if cat not in priority:
+                    priority.append(cat)
 
         if priority:
             df_priority = df[df["Label"].isin(priority)]
             df_rest     = df[~df["Label"].isin(priority)]
             df = pd.concat([df_priority, df_rest])
 
-        # En yüksek puanlıları al
         df = df.sort_values("Rank", ascending=False).head(top_n)
-
         return df[["Label", "Brand", "Name", "Price", "Rank", "Ingredients"]].to_dict("records")
 
     def summarize_problems(self, problems: list[str]) -> str:
-        """Tespit edilen problemleri Türkçe özetle."""
         tr = {
             "acne"       : "Akne",
             "bags"       : "Göz altı torbası",

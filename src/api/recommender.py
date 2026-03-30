@@ -6,7 +6,7 @@ Cilt analizi sonuçlarına göre ürün önerisi yapar.
 import pandas as pd
 from pathlib import Path
 
-_CSV = Path(__file__).resolve().parents[2] / "data" / "raw" / "cosmetics_clean.csv"
+_CSV = Path(__file__).resolve().parents[2] / "data" / "raw" / "cosmetics_combined.csv"
 
 
 class Recommender:

@@ -15,10 +15,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/health")
-def health():
-    return {"status": "ok", "version": "1.0.0"}
+app.include_router(router, prefix="/api")
 
+@app.get("/")
+def root():
+    return {"message": "Cilt Analizi API çalışıyor!"}
 # Router'lar ilerleyen haftalarda buraya eklenecek
 # from src.api.routers import analyze, recommend
 # app.include_router(analyze.router, prefix="/api/analyze")

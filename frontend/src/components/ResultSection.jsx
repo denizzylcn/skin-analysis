@@ -101,6 +101,41 @@ function buildRoutine(skinType, problems) {
   return STEPS
 }
 
+// ── Akıllı cilt skoru hesaplama ──────────────────────────────
+function calculateSkinScore(problems, lesion, skinType) {
+  let score = 100
+
+  // Problem ağırlıkları — ciddi problemler daha fazla düşürür
+  const WEIGHTS = {
+    acne:          18,
+    bags:          10,
+    blackhead:     10,
+    "cilt lekesi": 12,
+    "dark spot":   12,
+    gözenek:        8,
+    redness:       14,
+    wrinkle:       14,
+  }
+
+  // Her problem confidence × ağırlık kadar düşür
+  for (const p of (problems || [])) {
+    const w = WEIGHTS[p.label] || 10
+    score -= w * p.confidence
+  }
+
+  // Lezyon risk cezası
+  for (const l of (lesion || [])) {
+    if (l.risk === "yüksek") score -= 15 * l.confidence
+    else if (l.risk === "orta") score -= 8 * l.confidence
+  }
+
+  // Cilt tipi bonusu/cezası
+  if (skinType === "normal") score += 3
+  if (skinType === "oily")   score -= 4
+
+  return Math.min(100, Math.max(0, Math.round(score)))
+}
+
 // ── Glass style ───────────────────────────────────────────────
 const glass = (extra = {}) => ({
   background: "rgba(255,255,255,0.05)",
@@ -113,7 +148,7 @@ const glass = (extra = {}) => ({
 // ── PDF indirme ───────────────────────────────────────────────
 function downloadPDF({ result, preview, date }) {
   const { skin_type, problems, recommendations, skin } = result
-  const skinScore = Math.round(skin?.skin_score || 0)
+  const skinScore = calculateSkinScore(problems, result.lesion, skin_type?.prediction)
   const skinTypeLabel = SKIN_TYPE_TR[skin_type?.prediction] || skin_type?.prediction || "-"
   const oilLabel = OILINESS_TR[skin?.oiliness_level] || skin?.oiliness_level || "-"
   const problemsHtml = (problems || []).map(p =>
@@ -464,8 +499,8 @@ export default function ResultSection({ result, preview, onReset }) {
   if (result.status === "no_face") return <NoFaceCard onReset={onReset} />
 
   const { skin_type, problems, problem_summary, recommendations, skin } = result
-  const skinScore   = Math.round(skin?.skin_score || 0)
   const skinTypeKey = skin_type?.prediction
+  const skinScore   = calculateSkinScore(problems, result.lesion, skinTypeKey)
   const confidence  = Math.round((skin_type?.confidence || 0) * 100)
   const oilLabel    = OILINESS_TR[skin?.oiliness_level] || skin?.oiliness_level || "—"
   const brightness  = skin?.brightness_mean?.toFixed(0) || "—"

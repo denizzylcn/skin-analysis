@@ -308,6 +308,37 @@ const REGION_PROBLEMS = {
   eyeRight:   ["bags", "wrinkle"],
 }
 const normalizeLabel = (l) => l === "gözenek" ? "gozetek" : l
+
+const REGION_TIPS = {
+  forehead: {
+    desc: "Alın bölgesi aşırı yağlanma ve tıkalı gözeneklere eğilimlidir.",
+    tip:  "Salisilik asit veya BHA içeren ürünler kullanın.",
+  },
+  nose: {
+    desc: "Burun T-bölgesinin en yağlı kısmıdır, siyah noktalara zemin hazırlar.",
+    tip:  "Haftalık kil maskesi ve gözenek sıkılaştırıcı tonik uygulayın.",
+  },
+  leftCheek: {
+    desc: "Sol yanak leke ve kızarıklığa hassas bir bölgedir.",
+    tip:  "Niacinamide veya C vitamini içeren aydınlatıcı serum tercih edin.",
+  },
+  rightCheek: {
+    desc: "Sağ yanak leke ve kızarıklığa hassas bir bölgedir.",
+    tip:  "Centella asiatica veya aloe vera içeren sakinleştirici ürünler kullanın.",
+  },
+  chin: {
+    desc: "Çene hormonal akneye en yatkın bölgedir.",
+    tip:  "Benzoil peroksit veya salisilik asit içeren noktasal tedavi uygulayın.",
+  },
+  eyeLeft: {
+    desc: "Sol göz altı bölgesi ince deri yapısı nedeniyle torbalanmaya eğilimlidir.",
+    tip:  "Kafein içeren göz kremi kullanın, sabahları soğuk kompres yapın.",
+  },
+  eyeRight: {
+    desc: "Sağ göz altı bölgesi ince deri yapısı nedeniyle torbalanmaya eğilimlidir.",
+    tip:  "Kafein içeren göz kremi kullanın, uyku düzeninize dikkat edin.",
+  },
+}
 const REGION_LABEL = {
   forehead:"Alın", nose:"Burun", leftCheek:"Sol Yanak",
   rightCheek:"Sağ Yanak", chin:"Çene", eyeLeft:"Sol Göz Altı", eyeRight:"Sağ Göz Altı",
@@ -400,7 +431,7 @@ function FaceMap({ problems }) {
                     ))}
                   </div>
                 </div>
-                <div className="flex flex-wrap gap-1">
+                <div className="flex flex-wrap gap-1 mb-2">
                   {active.map(p => (
                     <span key={p} style={{ fontSize:10, padding:"1px 7px", borderRadius:10,
                       background:"rgba(244,63,94,0.15)", border:"1px solid rgba(244,63,94,0.25)", color:"#fda4af" }}>
@@ -408,6 +439,16 @@ function FaceMap({ problems }) {
                     </span>
                   ))}
                 </div>
+                {REGION_TIPS[region] && (
+                  <div style={{ borderTop:"1px solid rgba(255,255,255,0.06)", paddingTop:8, marginTop:4 }}>
+                    <p style={{ fontSize:11, color:"rgba(255,255,255,0.45)", lineHeight:1.5, marginBottom:4 }}>
+                      {REGION_TIPS[region].desc}
+                    </p>
+                    <p style={{ fontSize:11, color:"#fbbf24", lineHeight:1.5 }}>
+                      💡 {REGION_TIPS[region].tip}
+                    </p>
+                  </div>
+                )}
               </div>
             )
           })}
@@ -435,7 +476,7 @@ export default function ResultSection({ result, preview, onReset }) {
     { key: "recommendations", label: "Ürünler",         badge: recommendations?.length || null },
     { key: "routine",         label: "Bakım Rutini",    badge: "Yeni" },
     { key: "facemap",         label: "Yüz Haritası",    badge: "Yeni" },
-    { key: "lesion",          label: "Lezyon",          badge: "Yakında" },
+    { key: "lesion",          label: "Lezyon",          badge: null },
   ]
 
   return (
@@ -609,24 +650,57 @@ export default function ResultSection({ result, preview, onReset }) {
 
           {/* Lezyon */}
           {activeTab === "lesion" && (
-            <div className="flex-1 p-8 rounded-2xl flex flex-col items-center text-center gap-5" style={glass()}>
-              <div className="w-16 h-16 rounded-3xl flex items-center justify-center text-3xl"
-                style={{ background: "rgba(251,191,36,0.1)", border: "1px solid rgba(251,191,36,0.2)" }}>🔬</div>
-              <div>
-                <p className="text-xl font-bold text-white">Lezyon Analizi Geliyor</p>
-                <p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", marginTop: 8, lineHeight: 1.7, maxWidth: 320 }}>
-                  HAM10000 ile eğitilen <code style={{ background: "rgba(255,255,255,0.08)", padding: "1px 6px", borderRadius: 4 }}>lesion_best.pth</code> modeli
-                  entegre edilince burada 7 lezyon sınıfı analizi gösterilecek.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-2 justify-center">
-                {["Melanom","Nevüs","BCC","AK","BKL","DF","VASC"].map(l => (
-                  <span key={l} className="text-xs px-3 py-1 rounded-full"
-                    style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", color: "rgba(255,255,255,0.5)" }}>
-                    {l}
-                  </span>
-                ))}
-              </div>
+            <div className="flex-1 p-5 rounded-2xl" style={glass()}>
+              {(!result.lesion || result.lesion.length === 0) ? (
+                <div className="flex flex-col items-center py-10 gap-4 text-center">
+                  <div className="w-16 h-16 rounded-3xl flex items-center justify-center text-3xl"
+                    style={{ background: "rgba(16,185,129,0.1)", border: "1px solid rgba(16,185,129,0.2)" }}>✅</div>
+                  <div>
+                    <p className="text-lg font-bold text-white">Belirgin Lezyon Tespit Edilmedi</p>
+                    <p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", marginTop: 6, lineHeight: 1.7 }}>
+                      HAM10000 modeli herhangi bir cilt lezyonu tespit etmedi.
+                    </p>
+                  </div>
+                  <p style={{ fontSize: 11, color: "rgba(255,255,255,0.25)" }}>
+                    Bu sonuç tıbbi teşhis niteliği taşımaz.
+                  </p>
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  <p className="text-sm font-bold text-white mb-2">Lezyon Analizi Sonuçları</p>
+                  {result.lesion.map((l, i) => {
+                    const riskColor = l.risk === "yüksek" ? "#f43f5e" : l.risk === "orta" ? "#f59e0b" : "#10b981"
+                    const riskBg    = l.risk === "yüksek" ? "rgba(244,63,94,0.1)" : l.risk === "orta" ? "rgba(245,158,11,0.1)" : "rgba(16,185,129,0.1)"
+                    return (
+                      <div key={i} className="p-4 rounded-2xl" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}>
+                        <div className="flex items-center justify-between mb-2">
+                          <div className="flex items-center gap-2">
+                            <span className="text-sm font-bold text-white">{l.label}</span>
+                            <span className="text-xs px-2 py-0.5 rounded-full font-semibold"
+                              style={{ background: riskBg, color: riskColor, border: `1px solid ${riskColor}44` }}>
+                              {l.risk} risk
+                            </span>
+                          </div>
+                          <span className="text-sm font-bold" style={{ color: "#f9a8d4" }}>
+                            %{Math.round(l.confidence * 100)}
+                          </span>
+                        </div>
+                        <div className="h-1.5 rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.08)" }}>
+                          <div className="h-full rounded-full transition-all"
+                            style={{ width: `${l.confidence * 100}%`, background: `linear-gradient(90deg, ${riskColor}, ${riskColor}88)` }} />
+                        </div>
+                      </div>
+                    )
+                  })}
+                  <div className="mt-3 p-3 rounded-xl flex items-start gap-2"
+                    style={{ background: "rgba(251,191,36,0.06)", border: "1px solid rgba(251,191,36,0.15)" }}>
+                    <span>⚠️</span>
+                    <p style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", lineHeight: 1.6 }}>
+                      Bu sonuçlar bilgilendirme amaçlıdır. Yüksek riskli tespitlerde bir dermatoloğa başvurmanız önerilir.
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>
